@@ -7,7 +7,6 @@
 int opcao=0; 
 int repeticao=0;
 int menu=0;
-int sair=0;
 int escolha=0;
 int erro=0;
 
