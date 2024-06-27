@@ -27,7 +27,7 @@ int loop() //Função para retorno ao menu ou fechamento de qualquer local do prog
 		break;
 				
 		case 3:
-		sair=1; //Encerra o programa
+		return 0; //Encerra o programa
 		break;
 				
 		default: //Mensagem de erro caso outro caractere seja digitado além dos descritos acima
@@ -231,6 +231,7 @@ int deletar() //Deletar usuário
 		
 		if(file == NULL)
 		{
+			system("cls");
 			printf("\n\tUsuário não localizado\n\n");
 			system("pause");
 	
@@ -358,7 +359,8 @@ int main ()
 				break;
 						
 				case 4:
-				sair=1;
+				printf("\n\tEsse Software é de criação de Denner Filipi Ribeiro");
+				return 0;
 				break;
 						
 				default:
@@ -371,9 +373,7 @@ int main ()
 		}	
 	while (menu==1);
 		
-	if (sair==1)
-		{	
-		system("cls");
-		printf("\n\tEsse Software é de criação de Denner Filipi Ribeiro");
-		}
+	system("cls");
+	printf("\n\tEsse Software é de criação de Denner Filipi Ribeiro");
+		
 }
